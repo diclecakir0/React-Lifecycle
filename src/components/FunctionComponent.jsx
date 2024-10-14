@@ -20,7 +20,7 @@ const Paper = () => {
 			<h1>{todo.title}</h1>
 			<p>Id:{todo.id}</p>
 			<p>Page:{page}</p>
-			<button onClick={()=> setPage(page+1)}>degis</button>
+			<button onClick={()=> setPage(page+1)}>Change</button>
 		</div>
 	)
 }
