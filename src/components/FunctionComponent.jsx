@@ -4,24 +4,11 @@ const Paper = () => {
 		const [todo, setTodo] = useState({});
 		const [page, setPage] = useState(1);
 	  
-	//    useEffect(()=>{
-	// 	 console.log("¡Hola! ESPANA")
-	//    }, [])
-
-	//    useEffect(()=>{
-	// 	 console.log("Bileşen render edildi")
-	//    })
-
-	//    useEffect(() => {
-	// 	fetch(`https://jsonplaceholder.typicode.com/todos/${page}`)
-	// 	.then((res)=> res.json())
-	// 	.then((data) => setTodo(data));
-	//    }, [page]);
-
+	
 	useEffect(()=>{
-			console.log("bileşen ekrana geldi");
+			console.log("Add Component");
 			return ()=>{
-				console.log("bileşen ekrandan gitti");
+				console.log("Delete Component");
 			};
 		}, []
 
@@ -29,7 +16,7 @@ const Paper = () => {
 
 	return(
 		<div>
-			<h1>Fonksiyonel Bileşen</h1>
+			<h1>Function Component</h1>
 			<h1>{todo.title}</h1>
 			<p>Id:{todo.id}</p>
 			<p>Page:{page}</p>
